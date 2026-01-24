@@ -1,0 +1,13 @@
+pygame
+vosk
+pyaudio
+Pillow
+g4f
+pyserial
+silero-tts
+torch
+torchaudio
+fastapi
+uvicorn
+pydantic
+streamlit
