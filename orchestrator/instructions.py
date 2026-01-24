@@ -48,8 +48,9 @@
 import random
 import datetime
 from data import answers_list, jokes_list, get_weather, COMMANDS
+from ai.main import generate
 
-def instructions(command: str):
+def instruction(command: str):
     now = datetime.datetime.now()
     command = command.lower().strip()
     
@@ -76,4 +77,4 @@ def instructions(command: str):
             else:
                 return response
     
-    return "Извини, я не понял команду."
+    return generate(command)
